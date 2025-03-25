@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography with Animations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 40px;
+            line-height: 1.8;
+            text-align: center;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCl4Gl3Ze58b-gLEHDCosK-ZT2tGyFYNzAXw&s');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #222;
+        }
+        h1 {
+            
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            color: #fff;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 2s ease-in-out;
+        }
+        h2 {
+            
+            color: #f4f4f4;
+            animation: slideIn 1.5s ease-in-out;
+        }
+        h3 {
+            
+            color: #f4f4f4;
+            animation: slideIn 1.5s ease-in-out;
+        }
+        h4 {
+            
+            color: #f4f4f4;
+            animation: slideIn 1.5s ease-in-out;
+        }
+        h5 {
+            
+            color: #f4f4f4;
+            animation: slideIn 1.5s ease-in-out;
+        }
+        h6 {
+            
+            color: #f4f4f4;
+            animation: slideIn 1.5s ease-in-out;
+        }
+        p {
+            font-size: 1.2em;
+            color: #f0f0f0;
+            animation: bounce 1.5s infinite;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .italic {
+            font-style: italic;
+            color: #ffcc00;
+        }
+        .bold {
+            font-weight: bold;
+            color: #ff6600;
+        }
+        .underline {
+            text-decoration: underline;
+            color: #00ccff;
+        }
+        .small-caps {
+            font-variant: small-caps;
+        }
+        p, div {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            margin: 10px auto;
+            max-width: 80%;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateX(-100px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        /* Scrollable container */
+        .scroll-container {
+            max-height: 400px; /* Adjust height as needed */
+            max-width: 800px;  /* Adjust width as needed */
+            overflow-y: auto;
+            overflow-x: hidden;
+            border: 2px solid #333;
+            padding: 20px;
+            margin: auto;
+            background-color: #f8f9fa;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+            scrollbar-width: thin;
+            scrollbar-color: #888 #f0f0f0;
+        }
+        .scrollspy-example {
+    max-height: 400px; 
+    overflow-y: auto; 
+    border: 1px solid #ddd; 
+    background-color: #f8f9fa; 
+} 
+
+        /* Custom Scrollbar */
+        .scroll-container::-webkit-scrollbar {
+            width: 8px;
+        }
+        .scroll-container::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        .scroll-container::-webkit-scrollbar-track {
+            background: #f0f0f0;
+        }
+        .button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        background-color: blue;
+        border: none;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .button:hover {
+        background-color: darkblue;
+    }
+    .shape {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 100px;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .shape:hover {
+            transform: scale(1.2);
+        }
+
+        /* Circle */
+        .circle {
+            background-color: #ff5733;
+            border-radius: 50%;
+        }
+
+        /* Square */
+        .square {
+            background-color: #33a1ff;
+        }
+
+        /* Triangle */
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid #ffcc00;
+            background: none;
+        }
+
+        /* Hexagon */
+        .hexagon {
+            background-color: #6a0dad;
+            width: 100px;
+            height: 55px;
+            position: relative;
+        }
+
+        .hexagon::before, .hexagon::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+        }
+
+        .hexagon::before {
+            top: -25px;
+            border-bottom: 25px solid #6a0dad;
+        }
+
+        .hexagon::after {
+            bottom: -25px;
+            border-top: 25px solid #6a0dad;
+        }
+       
+        
+      
+      
+    </style>
+</head>
+<body>
+    
+    <h1>Typography with Animations</h1>
+    <h2>Heading Level 2</h2>
+    <p>"The fall of the Roman Empire in 476 AD marked the end of ancient Rome’s dominance and the beginning of the Middle Ages. With the decline of centralized power, Europe saw the rise of feudalism, where local lords controlled territories and pledged loyalty to kings. This period also witnessed significant cultural and technological advancements, such as the construction of Gothic cathedrals, the spread of the printing press, and the emergence of powerful kingdoms. The Renaissance eventually revived interest in classical knowledge, paving the way for the modern era." <span class="italic">italic</span>, <span class="bold">bold</span>, and <span class="underline">underlined</span> text.</p>
+    <p class="small-caps">This text uses small caps styling.</p>
+
+    <div class="container">
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+    <div><h1>h1. MoonLight</h1>
+        <h2>h2. MoonLight</h2>
+        <h3>h3. MoonLight</h3>
+        <h4>h4. MoonLight</h4>
+        <h5>h5. MoonLight</h5>
+        <h6>h6. MoonLight</h6>
+    </div>
+    <div><p>You can use the mark tag to <mark>highlight</mark> text.</p>
+    <p><del>This line of text is meant to be treated as deleted text.</del></p>
+    <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+    <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+    <p><u>This line of text will render as underlined.</u></p>
+    <p><small>This line of text is meant to be treated as fine print.</small></p>
+    <p><strong>This line rendered as bold text.</strong></p>
+    <p><em>This line rendered as italicized text.</em></p></div>
+
+   <div>
+    <figure>
+        <blockquote class="blockquote">
+          <p>A well-known quote, contained in a blockquote element.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </figcaption>
+      </figure>    <p class="small-caps">This text uses small caps styling.</p>
+    </div>
+
+    <div>
+<p class="text-start">Start aligned text on all viewport sizes.</p>
+<p class="text-center">Center aligned text on all viewport sizes.</p>
+<p class="text-end">End aligned text on all viewport sizes.</p>
+
+<p class="text-sm-end">End aligned text on viewports sized SM (small) or wider.</p>
+<p class="text-md-end">End aligned text on viewports sized MD (medium) or wider.</p>
+<p class="text-lg-end">End aligned text on viewports sized LG (large) or wider.</p>
+<p class="text-xl-end">End aligned text on viewports sized XL (extra large) or wider.</p>
+<p class="text-xxl-end">End aligned text on viewports sized XXL (extra extra large) or wider.</p>    <p class="small-caps">This text uses small caps styling.</p>
+</div>
+
+</div>
+</div>
+<section>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5AZyb0UYdTJ-Arjjs2gY1TVwrkIuSGx2f7Q&s" class="rounded float-start" alt="...">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5AZyb0UYdTJ-Arjjs2gY1TVwrkIuSGx2f7Q&s" class="rounded float-end" alt="...">
+    
+</section>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5AZyb0UYdTJ-Arjjs2gY1TVwrkIuSGx2f7Q&s" class="img-fluid" alt="...">
+    <br>
+    <br>
+<section>
+    <button onclick="location.href='sample.html';" calss="buttton" >Parallax</button>
+ </section>
+ <section>
+    <div class="shape circle">Circle</div>
+    <br>
+    <div class="shape square">Square</div>
+    <br>
+    <div class="triangle"></div>
+    <br>
+    <div class="shape hexagon">Hexagon</div>
+ </section>
+<br><br>
+ <section>
+    <button onclick="location.href='Back.html';" calss="buttton" >Background Effects</button>
+ </section>
+ <br><br>
+ <section>
+    <button onclick="location.href='mockup.html';" calss="buttton" >Mockups</button>
+ </section>
+
+
+</body>
+</html>
