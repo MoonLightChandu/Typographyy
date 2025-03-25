@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Effect</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Parallax Section */
+        .parallax {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCl4Gl3Ze58b-gLEHDCosK-ZT2tGyFYNzAXw&s');
+            height: 100vh; /* Full screen height */
+            background-attachment: fixed; /* Parallax effect */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Content Section */
+        .content {
+            padding: 50px;
+            text-align: center;
+            font-size: 1.2em;
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parallax">Welcome to the Parallax World</div>
+
+    <div class="content">
+        <h2>About Parallax Scrolling</h2>
+        <p>Parallax scrolling is a web design technique where the background moves at a different speed than the foreground content, creating a 3D effect.</p>
+        <p>It is commonly used in modern web designs to add depth and a dynamic look to web pages.</p>
+    </div>
+
+    <div class="parallax">Enjoy the Parallax Effect!</div>
+
+</body>
+</html>
