@@ -208,6 +208,87 @@
             bottom: -25px;
             border-top: 25px solid #6a0dad;
         }
+         /* Header Styles */
+        header {
+            background: #1e3c72;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: #ff4b2b;
+        }
+
+        /* Footer Styles */
+        footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 20px;
+            text-decoration: none;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+            color: #ff4b2b;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+        
        
         
       
@@ -215,6 +296,18 @@
     </style>
 </head>
 <body>
+      <header>
+        <div class="logo">MyWebsite</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br>
     
     <h1>Typography with Animations</h1>
     <h2>Heading Level 2</h2>
@@ -293,6 +386,16 @@
  <section>
     <button onclick="location.href='mockup.html';" calss="buttton" >Mockups</button>
  </section>
+
+ <footer>
+    <p>&copy; 2025 MyWebsite. All rights reserved.</p>
+    <div class="social-icons">
+        <a href="#">🔵 FB</a>
+        <a href="#">📸 IG</a>
+        <a href="#">🐦 TW</a>
+        <a href="#">💼 LI</a>
+    </div>
+</footer>
 
 
 </body>
